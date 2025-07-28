@@ -21,152 +21,61 @@ const headings = [
 ]
 ---
 
-<PageLayout title='Projects' {headings} info={{ slug: '/projects', hideComment: true }}>
-  <p>Github Activities:</p>
+<PageLayout title='Proyectos' info={{ slug: '/projects', hideComment: true }}>
   <p>
-    <Image
-      src='https://ghchart.rshah.org/659eb9/cworld1'
-      alt='github activities'
-      inferSize
-      loading='lazy'
-    />
+    En LYNX desarrollamos soluciones inteligentes y modulares para la gestión eficiente de empresas y el sector agrícola. Nuestros sistemas están diseñados para optimizar cada etapa del proceso, desde la producción hasta la exportación, cumpliendo con los más altos estándares de calidad y normatividad.
   </p>
-  <p>
-    If you think it would be useful or interesting to collaborate on a project, you can donate to
-    support my work or contact me to discuss a project.
-  </p>
-  <Button title='Checkout sponsorship' class='w-fit' href='#sponsorship'>
-    <Icon class='size-5' name='receive-money' slot='before' />
-  </Button>
 
-  <h2 id='theme'>Theme</h2>
+  <h2 id='gestion-empresarial'>Gestión Empresarial Integral</h2>
   <ProjectSection
     projects={[
       {
-        name: '🍭 Astro-theme-pure',
-        description: 'A simple, clean but powerful blog theme build by astro.',
-        links: [
-          { type: 'github', href: 'https://github.com/cworld1/astro-theme-pure' },
-          { type: 'site', href: 'https://github.com/cworld1/astro-theme-pure' },
-          {
-            type: 'doc',
-            href: 'https://github.com/cworld1/astro-theme-pure/blob/main/src/content/blog/customize/index.md'
-          }
-        ]
-      }
-    ]}
-  />
-
-  <h2 id='programs'>Programs</h2>
-  <ProjectSection
-    projects={[
-      {
-        name: '📒 Notie',
-        description:
-          'Android note App complies with Material You specifications, developed using Java',
-        links: [
-          { type: 'github', href: 'https://github.com/cworld1/notie' },
-          {
-            type: 'release',
-            href: 'https://github.com/cworld1/notie/releases'
-          }
-        ]
+        name: 'Módulo de Pedidos y Remisiones',
+        description: 'Automatiza y controla el ciclo completo de pedidos y remisiones, asegurando trazabilidad, rapidez y precisión en cada transacción.',
+        links: []
       },
       {
-        name: '💄 PKU Art',
-        description: 'A script to beautify pku course website',
-        links: [
-          { type: 'github', href: 'https://github.com/zhuozhiyongde/pku-art' },
-          { type: 'site', href: 'https://github.com/zhuozhiyongde/pku-art' },
-          { type: 'doc', href: 'https://docs.arthals.ink/docs/pku-art' }
-        ]
-      }
-    ]}
-  />
-  <Collapse title='Some old projects'>
-    <ProjectSection
-      projects={[
-        {
-          name: 'Search Switcher',
-          description: 'Add links to each other in search engines',
-          links: [{ type: 'github', href: 'https://github.com/cworld1/search-switcher' }]
-        },
-        {
-          name: 'Pure Baidu',
-          description: 'Baidu search page beautification module',
-          links: [
-            { type: 'doc', href: 'https://cworld0.com/blog/pure-baidu' },
-            { type: 'site', href: 'https://userstyles.org/styles/173673/pure' }
-          ]
-        }
-      ]}
-    />
-  </Collapse>
-
-  <h2 id='learnings'>Learnings</h2>
-  <ProjectSection
-    class='my-2'
-    projects={[
-      {
-        name: 'Rust Learning',
-        description: 'Some notes and code about CWorld learning Rust',
-        links: [{ type: 'github', href: 'https://github.com/cworld1/rust-learning' }]
+        name: 'Gestión de Inventario Inteligente',
+        description: 'Optimiza el control de inventarios con inteligencia artificial, evitando sobrecostos y faltantes, y facilitando la toma de decisiones estratégicas.',
+        links: []
       },
       {
-        name: 'CS 213 Learning',
-        description: 'Notes, code and experiences for Introduction to Computer Systems course',
-        links: [
-          {
-            type: 'github',
-            href: 'https://github.com/zhuozhiyongde/Introduction-To-Computer-System-2023Fall-PKU'
-          }
-        ]
+        name: 'Compras y Facturación Electrónica',
+        description: 'Digitaliza y agiliza el proceso de compras y facturación, cumpliendo con la normativa colombiana y estándares internacionales.',
+        links: []
       }
     ]}
   />
 
-  <h2 id='others'>Others</h2>
+  <h2 id='agricultura'>Soluciones Avanzadas para Agricultura y Exportación</h2>
   <ProjectSection
     projects={[
       {
-        name: 'CWorld',
-        description: "CWorld's Github",
-        links: [{ type: 'github', href: 'https://github.com/cworld1' }]
+        name: 'Gestión de Cultivos y Producción',
+        description: 'Supervisa y optimiza cada etapa del cultivo, desde la siembra hasta la cosecha, integrando sensores, análisis predictivo y reportes automáticos.',
+        links: []
       },
       {
-        name: 'Arthals',
-        description: 'Arthals Github',
-        links: [{ type: 'github', href: 'https://github.com/zhuozhiyongde' }]
+        name: 'Módulo de Exportación y Cumplimiento Normativo',
+        description: 'Genera automáticamente todos los formatos y reportes exigidos por autoridades sanitarias y entes gubernamentales, facilitando la exportación y el cumplimiento internacional.',
+        links: []
+      },
+      {
+        name: 'Automatización con Inteligencia Artificial',
+        description: 'Implementa IA para anticipar necesidades, optimizar recursos y detectar oportunidades de mejora en todos los procesos empresariales y agrícolas.',
+        links: []
       }
     ]}
   />
 
-  <!-- gpg signature -->
-  <h2 id='gpg-signature'>GPG Signature</h2>
-  <p>
-    You can verify the authenticity of the files I signed by checking the GPG signature. My GPG key
-    is <code>114514</code>, and you can find it on the opengpg key servers or download from it.
-  </p>
-  <Button href='https://keys.openpgp.org/search?q=114514' title='Checkout my key' target='_blank'>
-    <KeyIcon class='size-5' slot='before' />
-  </Button>
-
-  <!-- sponsorship -->
-  <h2 id='sponsorship'>Sponsorship</h2>
-  <p>Please leave a message or contact me proactively after sponsorship.</p>
-  <Sponsorship
-    methods={[
-      { name: 'WeChat', icon: 'wechat-pay', image: wechat },
-      { name: 'Alipay', icon: 'alipay', image: alipay }
-    ]}
-  />
-  <p>Thanks to the following sponsors:</p>
-  <Sponsors
-    sponsors={[
-      { name: 'C*a（酷安@暴走の蜗牛）', amount: '2.00', date: '2019-07-02' },
-      { name: '华雄(QQ：1300****71)', amount: '5.00', date: '2019-12-30' },
-      { name: '◌(QQ：1934****45)', amount: '3.00', date: '2019-12-30' },
-      { name: 'Anonymous', amount: '20.00', date: '2022-04-06' }
+  <h2 id='soporte'>Soporte y Personalización</h2>
+  <ProjectSection
+    projects={[
+      {
+        name: 'Acompañamiento y Soporte Especializado',
+        description: 'Nuestro equipo brinda soporte continuo y personalización a la medida, asegurando que cada solución se adapte perfectamente a las necesidades de tu empresa.',
+        links: []
+      }
     ]}
   />
 </PageLayout>

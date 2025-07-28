@@ -3,19 +3,19 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: 'LYNX',
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'LYNX',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: 'Desarrollo de sistemas inteligentes con IA para pedidos, remisiones, inventario, compras, facturación y cultivos.',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
-    attrs: 'en_US',
+    lang: 'es-CO',
+    attrs: 'es_CO',
     // Date locale
-    dateLocale: 'en-US',
+    dateLocale: 'es-CO',
     dateOptions: {
       day: 'numeric',
       month: 'short',
@@ -25,7 +25,7 @@ export const theme: ThemeUserConfig = {
   /** Set a logo image to show in the homepage. */
   logo: {
     src: 'src/assets/avatar.png',
-    alt: 'Avatar'
+    alt: 'Logo de LYNX'
   },
 
   // === Global configuration ===
@@ -63,26 +63,20 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
-        title: 'Moe ICP 114514',
-        link: 'https://icp.gov.moe/?keyword=114514',
+        title: 'Política de Privacidad',
+        link: '/terms/privacy-policy',
         style: 'text-sm' // Uno/TW CSS class
       },
       {
-        title: 'Travelling',
-        link: 'https://www.travellings.cn/go.html',
+        title: 'Términos y Condiciones',
+        link: '/terms/terms-and-conditions',
         style: 'text-sm'
-      },
-      // Privacy Policy link
-      {
-        title: 'Site Policy',
-        link: '/terms/list',
-        pos: 2 // position set to 2 will be appended to copyright line
       }
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: { }
   },
 
   content: {
@@ -100,17 +94,13 @@ export const integ: IntegrationUserConfig = {
   // See: https://astro-pure.js.org/docs/integrations/links
   links: {
     // Friend logbook
-    logbook: [
-      { date: '2024-07-01', content: 'Lorem ipsum dolor sit amet.' },
-      { date: '2024-07-01', content: 'vidit suscipit at mei.' },
-      { date: '2024-07-01', content: 'Quem denique mea id.' }
-    ],
+    logbook: [],
     // Yourself link info
     applyTip: [
-      { name: 'Name', val: theme.title },
-      { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://astro-pure.js.org/' },
-      { name: 'Avatar', val: 'https://astro-pure.js.org/favicon/favicon.ico' }
+      { name: 'Nombre', val: theme.title },
+      { name: 'Descripción', val: theme.description || 'Null' },
+      { name: 'Sitio web', val: 'https://lynx.com/' },
+      { name: 'Avatar', val: '/favicon/favicon.ico' }
     ]
   },
   // Enable page search function
