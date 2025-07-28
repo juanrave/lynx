@@ -6,15 +6,17 @@ import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
 
 const headings = [
-  { depth: 2, slug: 'hobbies', text: 'Hobbies' },
-  { depth: 2, slug: 'tools', text: 'Tools' },
-  { depth: 2, slug: 'social-networks', text: 'Social Networks' },
-  { depth: 2, slug: 'gossips', text: 'Gossips' },
-  { depth: 2, slug: 'about-blog', text: 'About Blog' }
+  { depth: 2, slug: 'presentacion', text: 'Presentación' },
+  { depth: 2, slug: 'especializacion', text: 'Áreas de especialización' },
+  { depth: 2, slug: 'tools', text: 'Herramientas y tecnologías' },
+  { depth: 2, slug: 'social-networks', text: 'Redes sociales' },
+  { depth: 2, slug: 'valores', text: 'Valores y compromiso' },
+  { depth: 2, slug: 'about-blog', text: 'Sobre esta web' }
 ]
 ---
 
-<PageLayout title='About' {headings} info='/about'>
+<PageLayout title='Conoce de nosotros' {headings} info='/about'>
+  <h2 id='presentacion'>Presentación</h2>
   <p>Empresa de tecnología con 25 años de experiencia</p>
   <p>
     LYNX es una empresa ubicada en Rionegro, Colombia, especializada en el desarrollo de sistemas inteligentes para la gestión de pedidos, remisiones, inventario, compras, facturación y soluciones avanzadas para cultivos. Contamos con 25 años de experiencia, lo que nos ha permitido perfeccionar nuestros sistemas para optimizar todo el proceso, desde el cultivo de flores hasta la exportación, cumpliendo con todos los lineamientos y generando los formatos requeridos por las autoridades sanitarias, tanto de Colombia como de otros países.
@@ -35,37 +37,13 @@ const headings = [
 
   {/* tools */}
   <h2 id='tools'>Herramientas y tecnologías</h2>
-  <p>Utilizamos tecnologías de vanguardia para garantizar eficiencia y seguridad en todos nuestros desarrollos.</p>
-  <ToolSection
-    class='mb-5'
-    title='Desarrollo'
-    tools={[
-      {
-        name: 'Node.js',
-        description: 'Backend y automatización',
-        href: 'https://nodejs.org/',
-        icon: import('@/assets/tools/typora.svg?raw')
-      },
-      {
-        name: 'Astro',
-        description: 'Framework web moderno',
-        href: 'https://astro.build/',
-        icon: import('@/assets/tools/typora.svg?raw')
-      },
-      {
-        name: 'Bases de datos',
-        description: 'Gestión de datos eficiente',
-        href: '#',
-        icon: import('@/assets/tools/typora.svg?raw')
-      },
-      {
-        name: 'Inteligencia Artificial',
-        description: 'Automatización y análisis',
-        href: '#',
-        icon: import('@/assets/tools/typora.svg?raw')
-      }
-    ]}
-  />
+  <p>Nuestro stack tecnológico está orientado a la eficiencia, seguridad y escalabilidad:</p>
+  <ul>
+    <li><b>ORACLE APEX</b>: Plataforma de desarrollo rápido para aplicaciones empresariales, utilizada como frontend principal.</li>
+    <li><b>ORACLE Database</b>: Motor de base de datos robusto y seguro, núcleo de nuestras soluciones empresariales y agrícolas.</li>
+    <li><b>Agentes de IA con Langchain (Python)</b>: Implementación de agentes inteligentes para automatización, análisis y toma de decisiones.</li>
+    <li><b>Chainlit</b>: Interfaz de usuario avanzada para interacción en lenguaje natural, permitiendo consultas y gestión mediante IA conversacional.</li>
+  </ul>
 
   {/* social-networks */}
   <h2 id='social-networks'>Redes sociales</h2>
@@ -100,5 +78,4 @@ const headings = [
     <li>Infraestructura: <a href='https://vercel.com/' target='_blank'>Vercel</a></li>
     <li>Automatización y datos: Node.js, bases de datos modernas, inteligencia artificial</li>
   </ul>
-  <Comment slot='bottom' />
 </PageLayout>

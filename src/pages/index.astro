@@ -65,16 +65,16 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-      <Section title='About'>
+      <Section title='Conócenos'>
         <p class='text-muted-foreground'>Soluciones empresariales con IA</p>
         <p class='text-muted-foreground'>
           En LYNX desarrollamos sistemas inteligentes para la gestión de pedidos, remisiones, inventario, compras, facturación y cultivos. Automatiza y optimiza tu empresa con tecnología de vanguardia.
         </p>
-        <Button title='Más sobre LYNX' class='w-fit self-end' href='/about' style='ahead' />
+        <Button title='Descubre más sobre LYNX' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
       {
         allPostsByDate.length > 0 && (
-          <Section title='Posts'>
+          <Section title='Galería'>
             <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
               {allPostsByDate.map((p) => (
                 <li class='flex flex-col gap-x-2 sm:flex-row'>
@@ -82,80 +82,39 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
                 </li>
               ))}
             </ul>
-            <Button title='More posts' class='w-fit self-end' href='/blog' style='ahead' />
+            <Button title='Ver más casos de éxito' class='w-fit self-end' href='/blog' style='ahead' />
           </Section>
         )
       }
-
-      {
-        /* <Section title='Experience'>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      >
-        <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-          </li>
-        </ul>
-      </Card>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      />
-    </Section> */
-      }
-      <Section title='Education'>
-        <Card
-          as='a'
-          heading='Expertos en tecnología y agricultura'
-          subheading='Nuestro equipo combina experiencia en desarrollo de software, inteligencia artificial y procesos agrícolas.'
-          date='2020 - Actualidad'
-          href='/about'
-        />
-      </Section>
-
-      <Section title='Website List'>
+      <Section title='Demos y Videos'>
         <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
           <ProjectCard
-            href='/projects'
-            heading='Sistemas de gestión'
-            subheading='Pedidos, remisiones, inventario, compras y facturación.'
+            href='/projects/demo1'
+            heading='Demo de gestión de pedidos'
+            subheading='Video demostrativo del módulo de pedidos y remisiones.'
             imagePath='/src/assets/projects/alex-tyson-2BAXJ7ha74s-unsplash.jpg'
           />
           <ProjectCard
-            href='/projects'
-            heading='Soluciones para cultivos'
-            subheading='Herramientas avanzadas para el sector agrícola.'
+            href='/projects/demo2'
+            heading='Demo de gestión de inventario'
+            subheading='Visualiza cómo funciona el control inteligente de inventarios.'
             imagePath='/src/assets/projects/angelica-teran-Bk9hpaXHK4o-unsplash.jpg'
           />
           <ProjectCard
-            href='/projects'
-            heading='Automatización con IA'
-            subheading='Optimización de procesos empresariales.'
+            href='/projects/demo3'
+            heading='Demo de exportación y cumplimiento'
+            subheading='Conoce el proceso de exportación y generación de formatos.'
             imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg'
           />
           <ProjectCard
-            href='/projects'
-            heading='Más proyectos'
-            subheading='Conoce más soluciones de LYNX.'
+            href='/projects/demo4'
+            heading='Más videos y casos de uso'
+            subheading='Descubre más soluciones de LYNX en acción.'
             imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
           />
         </div>
       </Section>
-
-      <Section title='Certifications'>
+      <Section title='Logros'>
         <Card
           as='a'
           heading='Innovación y calidad'
