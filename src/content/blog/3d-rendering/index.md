@@ -1,5 +1,5 @@
 ---
-title: "Predicción inteligente: Anticipa la demanda y toma decisiones con base en datos"
+title: "Predicción Inteligente: Anticipa la Demanda"
 description: "Descubre cómo la IA predice la demanda y te ayuda a tomar decisiones estratégicas."
 publishDate: "2025-07-29"
 tags:
