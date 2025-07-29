@@ -1,81 +1,39 @@
 ---
-title: Personalized Customization Guide
-publishDate: 2024-07-27
-description: 'astro-theme-pure Personalized Customization Guide'
+title: LYNX Everywhere: Acceso Unificado, Sin Límites
+description: Descubre cómo LYNX te permite gestionar tu empresa desde cualquier lugar del mundo, en cualquier dispositivo, sin instalaciones previas y con una experiencia uniforme.
 tags:
-  - Waline
-  - Vercel
-  - Supabase
+  - Web App
+  - Accesibilidad
+  - Multiplataforma
 heroImage: { src: './thumbnail.jpg', color: '#64574D' }
-language: 'English'
+language: 'Español'
 ---
 
-## Site Configuration
+# LYNX Everywhere: Acceso Unificado, Sin Límites
 
-[astro-theme-pure](https://github.com/cworld1/astro-theme-pure)
+Imagina un mundo donde tu empresa está siempre al alcance de tu mano. Con LYNX, ese mundo es una realidad. Nuestra plataforma, 100% web, te permite acceder a todas las funciones críticas de tu negocio desde cualquier lugar del planeta, en cualquier momento y desde cualquier dispositivo: computadora, tablet o smartphone.
 
-Customizing this theme requires adjusting a significant amount of source code.
+## Sin Instalaciones, Sin Barreras
+Olvídate de las complicaciones técnicas y de las instalaciones locales. LYNX funciona directamente en tu navegador, lo que significa que puedes comenzar a trabajar de inmediato, sin descargas ni configuraciones previas. Solo necesitas conexión a internet y tu usuario.
 
-We have made efforts to centralize the configuration options in the `src/site.config.ts` file for user convenience and have integrated a variety of common social media/tools icons. If you want to add new icons, you will need to modify the source code yourself.
+## Una Experiencia Uniforme, Siempre
+No importa si usas Windows, Mac, Android o iOS. La interfaz de LYNX es intuitiva, moderna y se adapta perfectamente a cualquier pantalla, garantizando que la experiencia sea siempre la misma, sin importar el dispositivo. Tus datos, tus procesos y tus herramientas, siempre disponibles y presentados de forma clara y eficiente.
 
-You can globally search for the following keywords to find the text that needs to be replaced:
+## Trabaja Donde Quieras, Cuando Quieras
+¿En la oficina, en casa, de viaje o en el campo? LYNX te acompaña. Gestiona pedidos, inventario, ventas y más, sin límites geográficos. La movilidad y la flexibilidad son parte de nuestro ADN, para que tu empresa nunca se detenga.
 
-- `Lorem ipsum`
-- `astro-theme-pure`
-- `cworld`
+## Así se ve LYNX en acción
 
-Next, we will introduce each aspect in detail.
+![Interfaz de LYNX en escritorio](./clientes_desktop.png)
+*Visualiza y gestiona tu empresa desde la comodidad de tu computador, con una interfaz clara y poderosa.*
 
-### Configuration Files
+![Interfaz de LYNX en móvil](./clientes_mobile.jpeg)
+*Accede a todas las funciones de LYNX desde tu smartphone, con la misma experiencia intuitiva y uniforme.*
 
-See [Configuration Files](/docs/setup/configuration) for details.
+[Solicita una demo personalizada](https://tudominio.com/contacto)
 
-#### Waline Comment System
+---
 
-See [Waline Comment System](/docs/integrations/comment) for details.
+**LYNX Everywhere** es más que tecnología: es libertad, es control y es el futuro de la gestión empresarial. ¡Descúbrelo hoy y lleva tu negocio al siguiente nivel!
 
-#### Footer
-
-Currently supported social media include:
-
-- `coolapk`
-- `telegram`
-- `github`
-- `bilibili`
-- `twitter`
-- `zhihu`
-- `steam`
-- `netease_music`
-
-If you want to add new social media, you need to modify the following files:
-
-- `src/types.ts`: Add a new `SocialLink.name` enum value and the icon mapping relationship for `SocialMediaIconId`
-- `public/icons/social.svg`: Follow the existing format and add a new icon as a symbol
-
-  It is recommended to find social media icons on the following websites to maintain consistency:
-
-  - [remixicon](https://remixicon.com/)
-  - [mingcute](https://www.mingcute.com/)
-
-### Other Files to Replace
-
-- `public/favicon`: The site's favicon. You can generate a favicon at [favicon.io](https://favicon.io/favicon-converter/)
-- `public/images/social-card.png`: The site's social card
-- `src/assets/`: This directory contains client-rendered avatars, sponsorship QR codes, and other images. Please replace them with your own images
-
-## Other Pages
-
-### About
-
-Currently supported icons can be found in the `src/icons` directory.
-
-If you want to add new Tools icons, you need to add a new icon in the `src/icons` directory.
-
-It is recommended to find new icons on the following websites to maintain consistency:
-
-- [iconify](https://icon-sets.iconify.design/)
-- [icones](https://icones.js.org/)
-
-## Deployment Mode
-
-See [Deployment](/docs/deployment) for details.
+[Contáctanos para más información](https://tudominio.com/contacto)

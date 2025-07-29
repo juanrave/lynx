@@ -49,47 +49,33 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         </p>
         <Button title='Descubre más sobre LYNX' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
-      {
-        allPostsByDate.length > 0 && (
-          <Section title='Galería'>
-            <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
-              {allPostsByDate.map((p) => (
-                <li class='flex flex-col gap-x-2 sm:flex-row'>
-                  <PostPreview post={p} />
-                </li>
-              ))}
-            </ul>
-            <Button title='Ver más casos de éxito' class='w-fit self-end' href='/blog' style='ahead' />
-          </Section>
-        )
-      }
-      <Section title='Demos y Videos'>
-        <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
-          <ProjectCard
-            href='/projects/demo1'
-            heading='Demo de gestión de pedidos'
-            subheading='Video demostrativo del módulo de pedidos y remisiones.'
-            imagePath='/src/assets/projects/alex-tyson-2BAXJ7ha74s-unsplash.jpg'
-          />
-          <ProjectCard
-            href='/projects/demo2'
-            heading='Demo de gestión de inventario'
-            subheading='Visualiza cómo funciona el control inteligente de inventarios.'
-            imagePath='/src/assets/projects/angelica-teran-Bk9hpaXHK4o-unsplash.jpg'
-          />
-          <ProjectCard
-            href='/projects/demo3'
-            heading='Demo de exportación y cumplimiento'
-            subheading='Conoce el proceso de exportación y generación de formatos.'
-            imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg'
-          />
-          <ProjectCard
-            href='/projects/demo4'
-            heading='Más videos y casos de uso'
-            subheading='Descubre más soluciones de LYNX en acción.'
-            imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
-          />
-        </div>
+      <Section title='Explora el Futuro con LYNX'>
+        <ul class='flex flex-col gap-y-6'>
+          <li>
+            <a href='/blog/customize/' class='no-underline hover:underline'>
+              <h3 class='text-lg font-semibold'>LYNX Everywhere: Acceso Unificado, Sin Límites</h3>
+            </a>
+            <p class='text-muted-foreground'>Gestiona tu empresa desde cualquier lugar y dispositivo, con una experiencia uniforme y sin complicaciones.</p>
+          </li>
+          <li>
+            <a href='/blog/improve-concentration/' class='no-underline hover:underline'>
+              <h3 class='text-lg font-semibold'>Ventas Inteligentes: Consulta tu Negocio con Solo Preguntar</h3>
+            </a>
+            <p class='text-muted-foreground'>Obtén información sobre el estado de tus ventas usando lenguaje natural, sin necesidad de reportes complejos.</p>
+          </li>
+          <li>
+            <a href='/blog/3d-rendering/' class='no-underline hover:underline'>
+              <h3 class='text-lg font-semibold'>Predicción Inteligente: Anticipa la Demanda y Toma Decisiones</h3>
+            </a>
+            <p class='text-muted-foreground'>Aprovecha la inteligencia artificial para prever la demanda futura y optimizar tu inventario y producción.</p>
+          </li>
+          <li>
+            <a href='/blog/markdown/' class='no-underline hover:underline'>
+              <h3 class='text-lg font-semibold'>Visualiza el Éxito: Dashboards Interactivos y Potentes</h3>
+            </a>
+            <p class='text-muted-foreground'>Lleva el análisis de datos a otro nivel con gráficos y tableros de control intuitivos y personalizables.</p>
+          </li>
+        </ul>
       </Section>
       <Section title='Logros'>
         <Card
