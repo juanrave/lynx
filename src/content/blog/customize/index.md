@@ -32,10 +32,7 @@ No importa si usas Windows, Mac, Android o iOS. La interfaz de LYNX es intuitiva
 ![Interfaz de LYNX en móvil](./clientes_mobile.jpeg)
 *Accede a todas las funciones de LYNX desde tu smartphone, con la misma experiencia intuitiva y uniforme.*
 
-[Solicita una demo personalizada](https://tudominio.com/contacto)
-
 ---
 
 **LYNX Everywhere** es más que tecnología: es libertad, es control y es el futuro de la gestión empresarial. ¡Descúbrelo hoy y lleva tu negocio al siguiente nivel!
 
-[Contáctanos para más información](https://tudominio.com/contacto)
