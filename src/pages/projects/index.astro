@@ -1,118 +1,90 @@
 ---
-import { Image } from 'astro:assets'
-
-import { Button, Collapse, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
-import ProjectSection from '@/components/projects/ProjectSection.astro'
-import Sponsors from '@/components/projects/Sponsors.astro'
-import Sponsorship from '@/components/projects/Sponsorship.astro'
-import alipay from '@/assets/alipay-qrcode.jpg'
-import KeyIcon from '@/assets/icons/key.svg'
-import wechat from '@/assets/wechat-qrcode.jpg'
-import config from '@/site-config'
-
-const headings = [
-  { depth: 2, slug: 'theme', text: 'Theme' },
-  { depth: 2, slug: 'programs', text: 'Programs' },
-  { depth: 2, slug: 'learnings', text: 'Learnings' },
-  { depth: 2, slug: 'others', text: 'Others' },
-  { depth: 2, slug: 'gpg-signature', text: 'GPG Signature' },
-  { depth: 2, slug: 'sponsorship', text: 'Sponsorship' }
-]
 ---
 
-<PageLayout title='Proyectos' info={{ slug: '/projects', hideComment: true }}>
-  <p>
-    En LYNX desarrollamos soluciones inteligentes y modulares para la gestión eficiente de empresas y el sector agrícola. Nuestros sistemas están diseñados para optimizar cada etapa del proceso, desde la producción hasta la exportación, cumpliendo con los más altos estándares de calidad y normatividad.
-  </p>
+<PageLayout title='Clientes' info={{ slug: '/clientes', hideComment: true }}>
+  <section class="clientes-lynx">
+    <h1>Nuestros Clientes, Nuestra Mejor Referencia</h1>
+    <p class="clientes-subtitle">
+      Más de 70 empresas líderes confían en LYNX para transformar y potenciar su gestión.
+    </p>
+    <p class="clientes-story">
+      En LYNX, cada cliente es una historia de éxito. Nos enorgullece acompañar a empresas de todos los tamaños y sectores en su camino hacia la transformación digital. Estas organizaciones han confiado en nuestra tecnología para optimizar sus procesos, innovar y crecer. ¡Conócelas!
+    </p>
+    <div class="clientes-mosaico">
+      {["Santa Monica","Colombian Harmony","Condor Andino","Flowers Party","Bloems","Candelaria Flowers","Magenta Farms","Natural Blooms","San Francisco Garden","Quirama","Jordan Farms","American Flowers","Zion Flowers","Cultivo Las Nubes","Dos Palmas","Florandina","Sunset Valley","Aromas Farms","Hydraflora","Remolinos","Cultiflora","Vanity Farms","Sunshine Flowers","Hydranflowers","Agrirainbow","Antioqueña de Flores","Azulina Farms","Blackriver","Cultivos La Ceja","Expo Flores Capirito","Flores y Follajes de Antioquia","Floresta Flowers","Flores Guadalupe","Horizonte Farms","Insuflores","J&P Flowers","Lord and Flowers","Novamundi","Cultivos Olivares","Ornamentales de Colombia","Princess Farms","Agencia de Inversiones Prospe","Royal Garden","S&J Flowers","Flores San Jeronimo","Surandina de Flores","Varaga Farms","Florco","Latin Flowers","Flores del Este","Express Farms","Novelty Farms","BlueMountaing","Aristi Farms","Beuth Sierra","Celebrity Flowers","Florantioquia","Greenex","Flores Isabelita","Marcapasos","Susan Farms","Pintek","Santini","Garden Flowers","Cosmo Flowers","Cultivos Sayonara","Almer Flowers","Eshkol Premium","Flores Tropicales","Cultivos El Laurel","Malibu Flowers","Arvi Farms","Floretta","Sky Flowers"].map(cliente => (
+        <span class="cliente-nombre">{cliente}</span>
+      ))}
+    </div>
+    <p class="clientes-cta">
+      ¿Quieres ser parte de esta comunidad de empresas exitosas?
+      <a href="/contacto" class="clientes-boton">Contáctanos</a>
+    </p>
+  </section>
 
-  <h2 id='gestion-empresarial'>Gestión Empresarial Integral</h2>
-  <ProjectSection
-    projects={[
-      {
-        name: 'Módulo de Pedidos y Remisiones',
-        description: 'Automatiza y controla el ciclo completo de pedidos y remisiones, asegurando trazabilidad, rapidez y precisión en cada transacción.',
-        links: []
-      },
-      {
-        name: 'Gestión de Inventario Inteligente',
-        description: 'Optimiza el control de inventarios con inteligencia artificial, evitando sobrecostos y faltantes, y facilitando la toma de decisiones estratégicas.',
-        links: []
-      },
-      {
-        name: 'Compras y Facturación Electrónica',
-        description: 'Digitaliza y agiliza el proceso de compras y facturación, cumpliendo con la normativa colombiana y estándares internacionales.',
-        links: []
-      }
-    ]}
-  />
-
-  <h2 id='agricultura'>Soluciones Avanzadas para Agricultura y Exportación</h2>
-  <ProjectSection
-    projects={[
-      {
-        name: 'Gestión de Cultivos y Producción',
-        description: 'Supervisa y optimiza cada etapa del cultivo, desde la siembra hasta la cosecha, integrando sensores, análisis predictivo y reportes automáticos.',
-        links: []
-      },
-      {
-        name: 'Módulo de Exportación y Cumplimiento Normativo',
-        description: 'Genera automáticamente todos los formatos y reportes exigidos por autoridades sanitarias y entes gubernamentales, facilitando la exportación y el cumplimiento internacional.',
-        links: []
-      },
-      {
-        name: 'Automatización con Inteligencia Artificial',
-        description: 'Implementa IA para anticipar necesidades, optimizar recursos y detectar oportunidades de mejora en todos los procesos empresariales y agrícolas.',
-        links: []
-      }
-    ]}
-  />
-
-  <h2 id='soporte'>Soporte y Personalización</h2>
-  <ProjectSection
-    projects={[
-      {
-        name: 'Acompañamiento y Soporte Especializado',
-        description: 'Nuestro equipo brinda soporte continuo y personalización a la medida, asegurando que cada solución se adapte perfectamente a las necesidades de tu empresa.',
-        links: []
-      }
-    ]}
-  />
+  <style>
+    .clientes-lynx {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #e0f7fa 0%, #fce4ec 100%);
+    }
+    .clientes-lynx h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: #1a237e;
+    }
+    .clientes-subtitle {
+      font-size: 1.2rem;
+      color: #3949ab;
+      margin-bottom: 1.5rem;
+    }
+    .clientes-story {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      color: #333;
+      font-size: 1.1rem;
+    }
+    .clientes-mosaico {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .cliente-nombre {
+      background: #fff;
+      border-radius: 1.5rem;
+      padding: 0.5rem 1.2rem;
+      font-weight: 600;
+      color: #1976d2;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: default;
+      font-size: 1rem;
+    }
+    .cliente-nombre:hover {
+      transform: scale(1.08);
+      box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);
+      background: #e3f2fd;
+    }
+    .clientes-cta {
+      margin-top: 2.5rem;
+      font-size: 1.2rem;
+    }
+    .clientes-boton {
+      display: inline-block;
+      margin-left: 0.5rem;
+      background: #1976d2;
+      color: #fff;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .clientes-boton:hover {
+      background: #0d47a1;
+    }
+  </style>
 </PageLayout>
-
-<script
-  is:inline
-  type='module'
-  data-astro-rerun
-  define:vars={{ npmCDN: config.npmCDN, walineServer: config.integ.waline.server }}
->
-  const loadPageviewCount = async () => {
-    const pageview = await import(`${npmCDN}/@waline/client@v3/dist/pageview.js`)
-    pageview.pageviewCount({
-      serverURL: walineServer,
-      path: window.location.pathname
-    })
-  }
-
-  await loadPageviewCount()
-</script>
-
-<style>
-  .sponsorship-card {
-    & .sponsorship-card-img {
-      opacity: 0.3;
-      --un-blur: blur(4px);
-      filter: var(--un-blur);
-    }
-
-    &:hover {
-      & .sponsorship-card-icon {
-        opacity: 0;
-      }
-      & .sponsorship-card-img {
-        opacity: 1;
-        --un-blur: blur(0);
-      }
-    }
-  }
-</style>
