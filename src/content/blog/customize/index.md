@@ -1,6 +1,7 @@
 ---
 title: "LYNX Everywhere: Acceso Unificado, Sin Límites"
-description: "Descubre cómo LYNX te permite gestionar tu empresa desde cualquier lugar del mundo, en cualquier dispositivo, sin instalaciones previas y con una experiencia uniforme."
+description: "Gestiona tu empresa desde cualquier lugar, en cualquier dispositivo, sin instalaciones previas."
+publishDate: "2024-06-12"
 tags:
   - Web App
   - Accesibilidad
