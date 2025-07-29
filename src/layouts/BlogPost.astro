@@ -19,7 +19,6 @@ interface Props {
 
 const {
   post: { id, data },
-  posts,
   headings,
   remarkPluginFrontmatter
 } = Astro.props
@@ -29,9 +28,7 @@ const {
   heroImage,
   publishDate,
   title,
-  updatedDate,
-  draft: isDraft,
-  comment: enableComment
+  updatedDate
 } = data
 
 const socialImage = heroImage
@@ -55,10 +52,7 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
   <slot />
 
   <Fragment slot='bottom'>
-    {/* Copyright */}
-    <Copyright {data} />
-    {/* Article recommend */}
-    {/* Comment */}
+    {/* Eliminado: Copyright, información de autor y tarjetas informativas */}
   </Fragment>
 
   <slot name='bottom-sidebar' slot='bottom-sidebar' />
