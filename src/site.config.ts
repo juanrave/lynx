@@ -3,9 +3,9 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'LYNX',
+  title: 'LYNX ai',
   /** Will be used in index page & copyright declaration */
-  author: 'LYNX',
+  author: 'LYNX ai - Soluciones empresariales con IA',
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Desarrollo de sistemas inteligentes con IA para pedidos, remisiones, inventario, compras, facturación y cultivos.',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
