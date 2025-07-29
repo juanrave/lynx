@@ -5,7 +5,9 @@ tags:
   - Web App
   - Accesibilidad
   - Multiplataforma
-heroImage: { src: './thumbnail.jpg', color: '#64574D' }
+heroImage:
+  src: './thumbnail.jpg'
+  color: '#64574D'
 language: 'Español'
 ---
 
