@@ -3,58 +3,23 @@ import PageLayout from '@/layouts/CommonPage.astro'
 ---
 
 <PageLayout title='Clientes' info={{ slug: '/clientes', hideComment: true }}>
-  <section class="clientes-lynx">
+  <section class="seccion-lynx">
     <h1>Nuestros Clientes, Nuestra Mejor Referencia</h1>
-    <p class="clientes-subtitle">
+    <p class="seccion-subtitle">
       Más de 70 empresas líderes confían en LYNX para transformar y potenciar su gestión.
     </p>
-    <p class="clientes-story">
-      En LYNX, cada cliente es una historia de éxito. Nos enorgullece acompañar a empresas de todos los tamaños y sectores en su camino hacia la transformación digital. Estas organizaciones han confiado en nuestra tecnología para optimizar sus procesos, innovar y crecer. ¡Conócelas!
+    <p class="seccion-story">
+      En LYNX, cada cliente es una historia de éxito...
     </p>
-    <div class="clientes-imagen">
-      <img src="./clientes.png" alt="Clientes de LYNX" />
+    <div class="seccion-imagen">
+      <img src="/clientes.png" alt="Clientes de LYNX" />
     </div>
-    <p class="clientes-cta">
+    <p class="seccion-cta">
       ¿Quieres ser parte de esta comunidad de empresas exitosas?
-      <a href="/contacto" class="clientes-boton">Contáctanos</a>
+      <a href="/contacto" class="seccion-boton">Contáctanos</a>
     </p>
   </section>
-
   <style>
-    .clientes-lynx {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .clientes-lynx h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      color: #1a237e;
-    }
-    .clientes-subtitle {
-      font-size: 1.2rem;
-      color: #3949ab;
-      margin-bottom: 1.5rem;
-    }
-    .clientes-story {
-      max-width: 600px;
-      margin: 0 auto 2rem auto;
-      color: #333;
-      font-size: 1.1rem;
-    }
-    .clientes-cta {
-      margin-top: 2.5rem;
-      font-size: 1.2rem;
-    }
-    .clientes-boton {
-      display: inline-block;
-      margin-left: 0.5rem;
-      background: #1976d2;
-      color: #fff;
-      padding: 0.5rem 1.5rem;
-      border-radius: 2rem;
-      font-weight: 700;
-      text-decoration: none;
-    }
+    /* Pega aquí el CSS unificado */
   </style>
 </PageLayout>
