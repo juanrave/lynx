@@ -11,10 +11,8 @@ import PageLayout from '@/layouts/CommonPage.astro'
     <p class="clientes-story">
       En LYNX, cada cliente es una historia de éxito. Nos enorgullece acompañar a empresas de todos los tamaños y sectores en su camino hacia la transformación digital. Estas organizaciones han confiado en nuestra tecnología para optimizar sus procesos, innovar y crecer. ¡Conócelas!
     </p>
-    <div class="clientes-mosaico">
-      {["Santa Monica","Colombian Harmony","Condor Andino","Flowers Party","Bloems","Candelaria Flowers","Magenta Farms","Natural Blooms","San Francisco Garden","Quirama","Jordan Farms","American Flowers","Zion Flowers","Cultivo Las Nubes","Dos Palmas","Florandina","Sunset Valley","Aromas Farms","Hydraflora","Remolinos","Cultiflora","Vanity Farms","Sunshine Flowers","Hydranflowers","Agrirainbow","Antioqueña de Flores","Azulina Farms","Blackriver","Cultivos La Ceja","Expo Flores Capirito","Flores y Follajes de Antioquia","Floresta Flowers","Flores Guadalupe","Horizonte Farms","Insuflores","J&P Flowers","Lord and Flowers","Novamundi","Cultivos Olivares","Ornamentales de Colombia","Princess Farms","Agencia de Inversiones Prospe","Royal Garden","S&J Flowers","Flores San Jeronimo","Surandina de Flores","Varaga Farms","Florco","Latin Flowers","Flores del Este","Express Farms","Novelty Farms","BlueMountaing","Aristi Farms","Beuth Sierra","Celebrity Flowers","Florantioquia","Greenex","Flores Isabelita","Marcapasos","Susan Farms","Pintek","Santini","Garden Flowers","Cosmo Flowers","Cultivos Sayonara","Almer Flowers","Eshkol Premium","Flores Tropicales","Cultivos El Laurel","Malibu Flowers","Arvi Farms","Floretta","Sky Flowers"].map(cliente => (
-        <span class="cliente-nombre">{cliente}</span>
-      ))}
+    <div class="clientes-imagen">
+      <img src="./clientes.png" alt="Clientes de LYNX" style="max-width: 100%; border-radius: 1.5rem; box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10); margin: 2rem auto; display: block;" />
     </div>
     <p class="clientes-cta">
       ¿Quieres ser parte de esta comunidad de empresas exitosas?
@@ -44,29 +42,6 @@ import PageLayout from '@/layouts/CommonPage.astro'
       margin: 0 auto 2rem auto;
       color: #333;
       font-size: 1.1rem;
-    }
-    .clientes-mosaico {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .cliente-nombre {
-      background: #fff;
-      border-radius: 1.5rem;
-      padding: 0.5rem 1.2rem;
-      font-weight: 600;
-      color: #1976d2;
-      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-      cursor: default;
-      font-size: 1rem;
-    }
-    .cliente-nombre:hover {
-      transform: scale(1.08);
-      box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);
-      background: #e3f2fd;
     }
     .clientes-cta {
       margin-top: 2.5rem;
