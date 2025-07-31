@@ -1,0 +1,82 @@
+---
+import PageLayout from '@/layouts/CommonPage.astro'
+---
+
+<PageLayout title='Contáctanos' info={{ slug: '/contacto', hideComment: true }}>
+  <section class="seccion-lynx">
+    <h1>Contáctanos</h1>
+    <p class="seccion-subtitle">
+      ¿Quieres transformar tu empresa con LYNX IA? ¡Estamos listos para ayudarte!
+    </p>
+    <p class="seccion-story">
+      Nuestro equipo de ventas está disponible para resolver tus dudas, mostrarte una demo personalizada y acompañarte en el proceso de transformación digital.
+    </p>
+    <div class="seccion-contacto">
+      <h2>Información del vendedor</h2>
+      <ul style="list-style: none; padding: 0; font-size: 1.1rem; color: #333;">
+        <li><b>Nombre:</b> Juan Pérez</li>
+        <li><b>Email:</b> <a href="mailto:info.lynx@gmail.com" style="color: #1976d2; text-decoration: underline;">ventas@lynxia.com</a></li>
+        <li><b>Teléfono:</b> <a href="tel:+573122869644" style="color: #1976d2; text-decoration: underline;">+57 300 123 4567</a></li>
+        <li><b>WhatsApp:</b> <a href="https://wa.me/573122869644" target="_blank" style="color: #1976d2; text-decoration: underline;">Chatea ahora</a></li>
+      </ul>
+    </div>
+    <p class="seccion-cta">
+      También puedes escribirnos a través del siguiente correo o llamarnos directamente. ¡Te responderemos lo antes posible!
+    </p>
+  </section>
+  <style>
+    .seccion-lynx {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #e0f7fa 0%, #fce4ec 100%);
+    }
+    .seccion-lynx h1, .seccion-lynx h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: #1a237e;
+    }
+    .seccion-subtitle {
+      font-size: 1.2rem;
+      color: #3949ab;
+      margin-bottom: 1.5rem;
+    }
+    .seccion-story {
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      color: #333;
+      font-size: 1.1rem;
+    }
+    .seccion-cta {
+      margin-top: 2.5rem;
+      font-size: 1.2rem;
+    }
+    .seccion-boton {
+      display: inline-block;
+      margin-left: 0.5rem;
+      background: #1976d2;
+      color: #fff;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .seccion-boton:hover {
+      background: #0d47a1;
+    }
+    .seccion-contacto {
+      margin: 2rem auto 1.5rem auto;
+      max-width: 400px;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
+      padding: 2rem 1rem;
+    }
+    .seccion-contacto h2 {
+      font-size: 1.5rem;
+      color: #1976d2;
+      margin-bottom: 1rem;
+    }
+  </style>
+</PageLayout> 
